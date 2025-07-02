@@ -15,8 +15,7 @@
     "build": "npx webpack --config webpack.config.cjs",
     "build:fastly": "npx webpack --config webpack.fastly.cjs && npm run fastly:wasm",
     "build:fly": "npx webpack --config webpack.fly.cjs",
-    "fastly:wasm": "npx js-compute-runtime ./dist/fastly.js ./dist/fastly.wasm",
-    "postinstall": "npm rebuild"
+    "fastly:wasm": "npx js-compute-runtime ./dist/fastly.js ./dist/fastly.wasm"
   },
   "repository": {
     "type": "git",
