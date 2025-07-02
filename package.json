@@ -15,7 +15,8 @@
     "build": "npx webpack --config webpack.config.cjs",
     "build:fastly": "npx webpack --config webpack.fastly.cjs && npm run fastly:wasm",
     "build:fly": "npx webpack --config webpack.fly.cjs",
-    "fastly:wasm": "npx js-compute-runtime ./dist/fastly.js ./dist/fastly.wasm"
+    "fastly:wasm": "npx js-compute-runtime ./dist/fastly.js ./dist/fastly.wasm",
+    "postinstall": "npm rebuild"
   },
   "repository": {
     "type": "git",
@@ -28,7 +29,6 @@
   "homepage": "https://github.com/serverless-dns/serverless-dns#readme",
   "engines": {
     "node": ">=16"
-    "bun": "ignore"
   },
   "dependencies": {
     "@riaskov/mmap-io": "^1.4.3",
